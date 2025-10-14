@@ -242,7 +242,7 @@ button[type="submit"] {
   font-size: 1em;
   background-color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   cursor: pointer;
 }
 
@@ -269,7 +269,7 @@ button[type="submit"]:hover {
 }
 
 .blog-item {
-  max-width: 37.5em; /* 600px */
+  max-width: 37.5em; 
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -278,8 +278,8 @@ button[type="submit"]:hover {
 .blog-item img {
   width: 100%;
   height: auto;
-  border-radius: 0.625em; /* 10px */
-  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1); /* 4px 8px */
+  border-radius: 0.625em; 
+  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1); 
 }
 
 .blog-item h3 {
@@ -303,8 +303,8 @@ button[type="submit"]:hover {
 }
 
 .blog-item:hover {
-  transform: translateY(-0.3125em); /* 5px */
-  box-shadow: 0 0.375em 0.75em rgba(0,0,0,0.15); /* 6px 12px */
+  transform: translateY(-0.3125em); 
+  box-shadow: 0 0.375em 0.75em rgba(0,0,0,0.15); 
 }
 
 .beneficios {
@@ -319,8 +319,8 @@ button[type="submit"]:hover {
 }
 
 .beneficio {
-  flex: 1 1 200px;
-  max-width: 250px;
+  flex: 1 1 12.5em;
+  max-width: 15.625em;
   margin: 1em;
   color: #6b6b6b;
 }
@@ -416,8 +416,8 @@ header h1 {
 }
 .texto {
   flex: 1;
-  min-width: 280px;
-  max-width: 600px;
+  min-width: 17.5em;
+  max-width: 37.5;
   padding: 1.5em;
 }
 
@@ -431,17 +431,17 @@ header h1 {
 
 .imagen {
   flex: 1;
-  min-width: 280px;
-  max-width: 500px;
+  min-width: 17.5em;
+  max-width: 31.25em;
   text-align: center;
   padding: 1.5em;
 }
 
 .imagen img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 25em;
+  border-radius: 0.75em;
+  box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
@@ -461,7 +461,7 @@ footer {
 .bienvenida {
   text-align: center;
   margin: 2em auto;
-  max-width: 800px;
+  max-width: 50em;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #4a4a4a;
@@ -480,16 +480,16 @@ footer {
   gap: 2em;
   padding: 2em;
   background-color: #ffffff;
-  border-top: 2px solid #f8a834;
+  border-top: 0.125em solid #f8a834;
 }
 
 .columna {
-  flex: 1 1 400px;
+  flex: 1 1 25em;
 }
 
 .izquierda img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625em;
   box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
 }
 
@@ -515,10 +515,10 @@ footer {
 /* Botón flotante circular */
 .boton-flotante {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  bottom: 1.25em;
+  right: 1.25em;
+  width: 3.75em;
+  height: 3.75em;
   border: none;
   border-radius: 50%;
   background-color: #f8a834;
@@ -530,8 +530,8 @@ footer {
 }
 
 .boton-flotante img {
-  width: 35px;
-  height: 35px;
+  width: 2.1875em;
+  height: 2.1875em;
   border-radius: 50%;
 }
 
@@ -550,3 +550,4 @@ footer {
   padding: 1.25em 2.5em;
   text-align: center;
 }
+
