@@ -16,9 +16,9 @@
     <!-- NAVBAR PRINCIPAL -->
 <nav class="navbar">
       <div class="logo">
-      <img src="Fotos/aviondepapelazulsinfondo.png" width="60" height="60" alt="Logo">
+        <img src="fotos/aviondepapelazulsinfondo.png" width="60" height="60" alt="Logo">
       </div>
-      <a href="index.html">Inicio</a>
+      <a href="paperly.html">Inicio</a>
       <a href="acerca.html">Acerca</a>
       <a href="tienda.html">Tienda</a>
       <a href="clubdelectura.html">Club de Lectura</a>
@@ -42,92 +42,31 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cuenta</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
+          
+          <button id="toggleCartBtn">🛒 Ver carrito</button>
+            <div id="cartDropdown" class="cart-dropdown hidden">
+            <h3>Carrito de Compras</h3>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: $0.00</div>
+            <button id="clearCart">Vaciar</button>
+            <button id="checkoutBtn">Ir a pagar 💳</button> <!-- 👈 nuevo botón -->
+            </div>
         </ul>
       </div>
     </div>
 
   </header>
 <body>
-  <div class="container">    
-    <div class="row">
+<div class="container">
 
-      <div class="col-sm-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Pack Scrapbook</div>
-          <div class="panel-body">
-            <img src="Fotos/packsb.jpg" class="img-responsive" style="width:100%" alt="Pack Scrapbook">
-          </div>
-          <div class="panel-footer">30.000 COP</div>
-        </div>
-      </div>
+  <div id="productsGrid"></div> <!-- Aquí se renderizan los productos con paneles -->
 
-      <div class="col-sm-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Planner</div>
-          <div class="panel-body">
-            <img src="Fotos/planner.jpg" class="img-responsive" style="width:100%" alt="Pack Scrapbook">
-          </div>
-          <div class="panel-footer">30.000 COP</div>
-        </div>
-      </div>
-
-            <div class="col-sm-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Stickers</div>
-          <div class="panel-body">
-            <img src="Fotos/journal.jpg" class="img-responsive" style="width:100%" alt="Pack Scrapbook">
-          </div>
-          <div class="panel-footer">30.000 COP</div>
-        </div>
-      </div>
-  <br>
-
-  <div class="container">    
-    <div class="row">
-
-      <div class="col-sm-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Repuesto para hojas de folder</div>
-          <div class="panel-body">
-            <img src="Fotos/hojasfolder.jpg" class="img-responsive" style="width:100%" alt="Repuesto para hojas de folder">
-          </div>
-          <div class="panel-footer">10.000 COP</div>
-        </div>
-      </div>
-
-      <div class="col-sm-4"> 
-        <div class="panel panel-primary">
-          <div class="panel-heading">Block de notas</div>
-          <div class="panel-body">
-            <img src="Fotos/blockdenotas.jpg" class="img-responsive" style="width:100%" alt="Block de notas">
-          </div>
-          <div class="panel-footer">15.000 COP</div>
-        </div>
-      </div>
-
-      <div class="col-sm-4"> 
-        <div class="panel panel-primary">
-          <div class="panel-heading">Bolígrafos</div>
-          <div class="panel-body">
-            <img src="Fotos/lapiceros.jpg" class="img-responsive" style="width:100%" alt="Bolígrafos">
-          </div>
-          <div class="panel-footer">12.000 COP</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
+</div>
   <br><br>
 
   <footer>
-   <p>© 2025 Paperly - Todos los derechos reservados</p>
+    <p class="footer">Todos los derechos reservados 😊😊 &copy; 2025</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
-
-
-
-

@@ -114,71 +114,142 @@ img {
   color: black;
 }
 /*TIENDA*/
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+.cart-dropdown {
+  font-family: 'Poppins', sans-serif;
+  color: #3c3c3c;
+  background-color: #faf7ff; /* Fondo pastel claro */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 260px; /* o el ancho que uses */
 }
-/* Cambia el color del encabezado azul (panel-primary) */
-.panel-primary > .panel-heading {
-  background-color: #f8a834; /* naranja pastel */
-  color: white;
-}
-
-/* Cambia el color del encabezado rojo (panel-danger) */
-.panel-danger > .panel-heading {
-  background-color: #0A3B5C; /* rosa pastel */
-  color: #0A3B5C;
-}
-
-/* Cambia el color del encabezado verde (panel-success) */
-.panel-success > .panel-heading {
-  background-color: #0A3B5C; /* verde pastel */
-  border-color: #0A3B5C;
-  color: #0A3B5C;
-}
-
-/* Cambiar color del panel "primary" */
-.panel-primary > .panel-heading {
-  background-color: #f8a834;  /* naranja */
-  color: white;               /* texto blanco */
-}
-
-/* Cambiar color del panel "danger" */
-.panel-danger > .panel-heading {
-  background-color: #0A3B5C;  /* rojo original Bootstrap, cámbialo si quieres */
-  color: white;
-}
-
-/* Cambiar color del panel "success" */
-.panel-success > .panel-heading {
-  background-color: #f8a834;  /* verde original, puedes cambiarlo */
-  color: white;
-}
-
-/* Fondo del cuerpo de los paneles */
-.panel-body {
-  background-color: #d2cdcd;  /* color de fondo suave */
-}
-
-/* Pie del panel */
-.panel-footer {
-  background-color: #0A3B5C;  /* color personalizado */
-  color: #0A3B5C;
-  font-weight: bold;
-  font-family: 'Poppins';
-  align-items: center;
-}
-/* Efecto al pasar el cursor por encima de las cajas */
-.panel {
-  border-radius: 0.5em;
+#toggleCartBtn {
+  font-family: 'Poppins', sans-serif;  /* Fuente */
+  font-size: 1.5rem;                     /* Tamaño de letra */
+  font-weight: 600;                    /* Texto un poco más grueso */
+  background-color: #00bcd4;           /* Lila pastel */
+  color: white;                        /* Texto blanco */
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al pasar el cursor */
+#toggleCartBtn:hover {
+  background-color: #051c2c;           /* Lila más oscuro */
+  transform: translateY(-2px);         /* Pequeño efecto de elevación */
+}
+
+/* Opcional: efecto al presionar */
+#toggleCartBtn:active {
+  transform: scale(2);
+}
+/* Título del carrito */
+.cart-dropdown h3 {
+  text-align: center;        /* Centra el texto */
+  color: #f8a834;            /* Lila pastel (puedes cambiarlo) */
+  font-weight: 600;          /* Hace la letra un poco más gruesa */
+  font-size: 2rem;         /* Tamaño del texto */
+  margin-bottom: 1rem;       /* Espacio debajo del título */
+}
+  .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .quantity-controls {
+    margin: 5px 0;
+  }
+
+  .quantity-controls button {
+    margin: 0 5px;
+  }
+
+  .remove-btn {
+    margin-left: 10px;
+    color: rgb(5, 1, 1);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .panel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.cart-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 1.5em;
+  width: 250px;
+  background: #0A3B5C;
+  border: 0.5em solid #f8a834;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif; /* Cambia el tipo de letra */
+  color: #f8a834; /* Cambia el color del texto */
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem;
+  border-radius: 10px;
+}
+#clearCart {
+  background-color: #f8a834; /* Rosa pastel suave */
+  color: white; /* Rojo vino suave */
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.8rem;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clearCart:hover {
+  background-color: #f8a834; /* Un poco más fuerte al pasar el mouse */
+  color: white;
+}
+
+/* Botón de Ir a Pagar */
+#checkoutBtn {
+  background-color: #0A3B5C; /* Lila pastel */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#checkoutBtn:hover {
+  background-color: #072437; /* Más oscuro al pasar el mouse */
+}
+
+/* Opcional: espacio entre botones */
+#clearCart,
+#checkoutBtn {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+button {
   cursor: pointer;
 }
 
-.panel:hover {
-  box-shadow: 0 0.375em 1em rgba(0, 0, 0, 0.2);
-  transform: translateY(-0.3125em);
-}
+
+
 /*FORMULARIO*/
 h2.CONTACTO {
   margin-bottom: 1em;
@@ -242,7 +313,7 @@ button[type="submit"] {
   font-size: 1em;
   background-color: #ffffff;
   border: none;
-  border-radius: 0.3125em;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -269,7 +340,7 @@ button[type="submit"]:hover {
 }
 
 .blog-item {
-  max-width: 37.5em; 
+  max-width: 37.5em; /* 600px */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -278,8 +349,8 @@ button[type="submit"]:hover {
 .blog-item img {
   width: 100%;
   height: auto;
-  border-radius: 0.625em; 
-  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1); 
+  border-radius: 0.625em; /* 10px */
+  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1); /* 4px 8px */
 }
 
 .blog-item h3 {
@@ -303,8 +374,8 @@ button[type="submit"]:hover {
 }
 
 .blog-item:hover {
-  transform: translateY(-0.3125em); 
-  box-shadow: 0 0.375em 0.75em rgba(0,0,0,0.15); 
+  transform: translateY(-0.3125em); /* 5px */
+  box-shadow: 0 0.375em 0.75em rgba(0,0,0,0.15); /* 6px 12px */
 }
 
 .beneficios {
@@ -319,8 +390,8 @@ button[type="submit"]:hover {
 }
 
 .beneficio {
-  flex: 1 1 12.5em;
-  max-width: 15.625em;
+  flex: 1 1 200px;
+  max-width: 250px;
   margin: 1em;
   color: #6b6b6b;
 }
@@ -416,8 +487,8 @@ header h1 {
 }
 .texto {
   flex: 1;
-  min-width: 17.5em;
-  max-width: 37.5;
+  min-width: 280px;
+  max-width: 600px;
   padding: 1.5em;
 }
 
@@ -431,17 +502,17 @@ header h1 {
 
 .imagen {
   flex: 1;
-  min-width: 17.5em;
-  max-width: 31.25em;
+  min-width: 280px;
+  max-width: 500px;
   text-align: center;
   padding: 1.5em;
 }
 
 .imagen img {
   width: 100%;
-  max-width: 25em;
-  border-radius: 0.75em;
-  box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.1);
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
@@ -461,7 +532,7 @@ footer {
 .bienvenida {
   text-align: center;
   margin: 2em auto;
-  max-width: 50em;
+  max-width: 800px;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #4a4a4a;
@@ -480,16 +551,16 @@ footer {
   gap: 2em;
   padding: 2em;
   background-color: #ffffff;
-  border-top: 0.125em solid #f8a834;
+  border-top: 2px solid #f8a834;
 }
 
 .columna {
-  flex: 1 1 25em;
+  flex: 1 1 400px;
 }
 
 .izquierda img {
   width: 100%;
-  border-radius: 0.625em;
+  border-radius: 10px;
   box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
 }
 
@@ -515,10 +586,10 @@ footer {
 /* Botón flotante circular */
 .boton-flotante {
   position: fixed;
-  bottom: 1.25em;
-  right: 1.25em;
-  width: 3.75em;
-  height: 3.75em;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
   border: none;
   border-radius: 50%;
   background-color: #f8a834;
@@ -530,8 +601,8 @@ footer {
 }
 
 .boton-flotante img {
-  width: 2.1875em;
-  height: 2.1875em;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 
@@ -550,4 +621,3 @@ footer {
   padding: 1.25em 2.5em;
   text-align: center;
 }
-
